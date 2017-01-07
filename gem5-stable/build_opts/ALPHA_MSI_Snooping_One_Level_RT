@@ -1,0 +1,5 @@
+TARGET_ISA = 'alpha'
+SS_COMPATIBLE_FP = 1
+CPU_MODELS = 'AtomicSimpleCPU,TimingSimpleCPU'
+PROTOCOL = 'MSI_Snooping_One_Level_RT'
+RUBY = True

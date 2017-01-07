@@ -1,0 +1,510 @@
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:04:15
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 3778376 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:04:32
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 3167044 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:04:46
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 3067964 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:05:00
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 5044615 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:05:21
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 3532011 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:05:37
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 8818460 because Ruby Tester completed
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:06:19
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 3338364 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:06:36
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 3600056 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:06:52
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 2671787 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:07:04
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 3299963 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:07:19
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 9808176 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:08:06
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 3423587 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:08:21
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 3495616 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:08:37
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 15501267 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:09:47
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 3383983 because That's all folks
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:10:02
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 19451237 because Ruby Tester completed
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+warn: rounding error > tolerance
+    0.072760 rounded to 0
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Oct  7 2016 01:38:41
+gem5 started Oct  7 2016 02:11:25
+gem5 executing on caesr3
+command line: ./build/X86_MSI_Snooping_One_Level_RT_RRecv/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1 --maxloads=1000000
+
+block_size_bits 6
+NUM_CPU I: 0
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 1
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 2
+KEY HAHHJ
+KEY HAHHJ
+NUM_CPU I: 3
+KEY HAHHJ
+KEY HAHHJ
+Global frequency set at 1000000000 ticks per second
+info: Entering event queue @ 0.  Starting simulation...
+Exiting @ tick 3132060 because That's all folks

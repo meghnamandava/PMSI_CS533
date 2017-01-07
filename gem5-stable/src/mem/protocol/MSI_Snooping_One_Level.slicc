@@ -1,0 +1,6 @@
+protocol "MSI_Snooping_One_Level";
+include "RubySlicc_interfaces.slicc";
+include "MSI_Snooping_One_Level-msg.sm";
+include "MSI_Snooping_One_Level-cache.sm";
+include "MSI_Snooping_One_Level-dir.sm";
+include "MSI_Snooping_One_Level-dma.sm";
