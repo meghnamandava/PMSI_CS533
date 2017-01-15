@@ -12,7 +12,7 @@ This is the gem5 code repository for Predictable MSI (PMSI) presented in our RTA
 * Gem5 has been extended to run memory trace based execution.
 * The trace based simulation injects traces into the ruby memory model thereby bypassing the core/processor. 
 * Trace based simulation can be enabled by setting the `TRACE` flag in `src/cpu/testers/rubytest/Trace.hh`.	
-* The trace based simulation reads from a file `trace.trc` that consists of lines of requests of the form `Addr OP time`. OP is of type RD for read and WR for write, and time is a positive integer value that denotes the arrival time of the memory request to the memory hierarchy. 
+* The trace based simulation reads from a file `trace.trc` that consists of lines of requests of the form `Addr OP time`. OP is of type RD for read and WR for write, and time is a positive integer value that denotes the arrival time of the memory request to the memory hierarchy.
 
 # Running PMSI
 * To run PMSI, the following command line options need to be used for correct functioning: `--ruby, --cpu-type=timing, --topology=Crossbar --cpu-clock=xGHz --ruby-clock=yGHz`.
@@ -23,3 +23,6 @@ This is the gem5 code repository for Predictable MSI (PMSI) presented in our RTA
 # Predictable bus arbitration
 * We extend Gem5 to support a snoopy bus with a predictable arbiter. The predictable aribiter operates in a time division multiplexed (TDM) manner.
 * The `NPROC` and `SLOT_WIDTH` parameters in `src/cpu/testers/rubyTest/Trace.hh` control the number of requestors and the TDM slot width per requestor.
+
+# Contact
+* Feel free to contact [Anirudh](mailto:amkaushi@uwaterloo.ca) for questions regarding PMSI.
