@@ -3,10 +3,10 @@
 This is the gem5 code repository for Predictable MSI (PMSI) presented in our RTAS'17 paper: [Predictable Cache Coherence for Multi-core Real-time Systems] ().
 
 # Getting started
-	* The Gem5 simulator has been modified to support predictable snoopy bus architecture, and trace based simulation. 
-	* `$GEM5` refers to the top level directory where gem5 resides. 
-	* File `$GEM5/build_opts/PMSI` contains information for building the PMSI system, and `$GEM5/configs/ruby/PMSI.py` provides information about the component (caches, network, DRAM) connections in the system. Note that these files do not need to be changed unless the cache hierarchy is extended. 
-	* To build PMSI, execute `scons $GEM5/build/PMSI/gem5.opt -j8`. The `-j8` is to accelerate the build process.
+* The Gem5 simulator has been modified to support predictable snoopy bus architecture, and trace based simulation. 
+* `$GEM5` refers to the top level directory where gem5 resides. 
+* File `$GEM5/build_opts/PMSI` contains information for building the PMSI system, and `$GEM5/configs/ruby/PMSI.py` provides information about the component (caches, network, DRAM) connections in the system. Note that these files do not need to be changed unless the cache hierarchy is extended. 
+* To build PMSI, execute `scons $GEM5/build/PMSI/gem5.opt -j8`. The `-j8` is to accelerate the build process.
 
 # Memory trace simulation
 	* Gem5 has been extended to run memory trace based execution.
