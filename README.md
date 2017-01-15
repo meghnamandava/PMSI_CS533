@@ -25,4 +25,4 @@ This is the gem5 code repository for Predictable MSI (PMSI) presented in our RTA
 * The `NPROC` and `SLOT_WIDTH` parameters in `src/cpu/testers/rubyTest/Trace.hh` control the number of requestors and the TDM slot width per requestor.
 
 # Contact
-* Feel free to contact [Anirudh](mailto:amkaushi@uwaterloo.ca) for questions regarding PMSI.
+* Feel free to contact [us](mailto:amkaushi@uwaterloo.ca) for questions regarding PMSI.
