@@ -1,6 +1,6 @@
 # PMSI: Predictable MSI cache coherence protocol
 
-This is the gem5 code repository for Predictable MSI (PMSI) presented in our RTAS'17 paper: [Predictable Cache Coherence for Multi-core Real-time Systems] ().
+This is the gem5 code repository for Predictable MSI (PMSI) presented in our RTAS'17 paper: [Predictable Cache Coherence for Multi-core Real-time Systems] (https://caesr.uwaterloo.ca/papers/hassan_17_pmsi.pdf).
 
 # Getting started
 * The Gem5 simulator has been modified to support predictable snoopy bus architecture, and trace based simulation. 
