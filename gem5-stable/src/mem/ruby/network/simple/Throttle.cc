@@ -149,7 +149,7 @@ Throttle::operateVnet(int vnet, int &bw_remaining, bool &schedule_wakeup,
 		MessageBuffer *demandQueue = m_in[2];
 		
 		if (!BASELINE) {
-if (slotStart && (vnet == 6) && returnSID() <7) {
+if (slotStart && (vnet == 6) && returnSID() <4) {
 				setSlotType();
 				bool isWBSlot = getVnetToken();
 				DPRINTF(RubyNetwork, "m_SID: %s, SlotOwner: %s, slotStart: %s, isWBSlot: %s, smBlock: %s vnet: %s\n", returnSID(), slotOwner, slotStart, isWBSlot, getSharedMemStatus(), vnet);
@@ -179,7 +179,7 @@ if (slotStart && (vnet == 6) && returnSID() <7) {
 			}
 		}
 		else {
-if (slotStart && returnSID() <7) {
+if (slotStart && returnSID() <4) {
 				setSlotType();
 			}
 		}
@@ -224,7 +224,7 @@ if (slotStart && returnSID() <7) {
 					if (vnet == 6 || vnet == 2) vnetMatch = true;
 				}
 
- if (switchID == 8 && SID < 7 && vnetMatch) {
+ if (switchID == 5 && SID < 4 && vnetMatch) {
 					// This is for cases when the core sends a request (demand or WB) to the arbiter 
 					if (slotOwner == SID && slotStart) {
 						// This is the start of the slot of the core under analysis 
@@ -312,7 +312,7 @@ if (slotStart && returnSID() <7) {
 					}
 					break;
 				}
- else if (switchID == 8 && SID == 7) {
+ else if (switchID == 5 && SID == 4) {
 					// This case is for shared memory requests/responses to the arbiter 
 					bool isSlotOwner = false;
 
@@ -371,6 +371,8 @@ if (slotStart && returnSID() <7) {
 					int diff = m_units_remaining[vnet] - bw_remaining;
 					m_units_remaining[vnet] = max(0, diff);
 					bw_remaining = max(0, -diff);
+
+					if (in->isReady()) schedule_wakeup = true;
 				}
 				break;
 			}
