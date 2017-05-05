@@ -29,7 +29,7 @@ This is the gem5 code repository for Predictable MSI (PMSI) presented in our RTA
 * We provide a script to run the SPLASH2 benchmarks in the `scripts/` directory.
 
 # Docker file
-* We also provide a docker environment to replicate the environment we used to carry out evaluation. Please run `sudo docker build -t pmsi .` to build the container with dependencies and PMSI, and `sudo docker run -i -t pmsi` to run.
+* We also provide a docker environment to replicate the environment we used to carry out our evaluation. Please run `sudo docker build -t pmsi .` to build the container with dependencies and PMSI, and `sudo docker run -i -t pmsi` to run.
 
 # Contact
 * Feel free to contact [us](mailto:amkaushi@uwaterloo.ca) for questions regarding PMSI.
