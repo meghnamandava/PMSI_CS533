@@ -28,5 +28,8 @@ This is the gem5 code repository for Predictable MSI (PMSI) presented in our RTA
 * For trace based execution, populate the `trace.trc` file with the necessary memory operations and execute: `./build/X86_MSI_Snooping_One_Level_RT/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1`. 
 * We provide a script to run the SPLASH2 benchmarks in the `scripts/` directory.
 
+# Docker file
+* We also provide a docker environment to replicate the environment we used to carry out evaluation. Please run `sudo docker build -t pmsi .` to build the container with dependencies and PMSI, and `sudo docker run -i -t pmsi` to run.
+
 # Contact
 * Feel free to contact [us](mailto:amkaushi@uwaterloo.ca) for questions regarding PMSI.
