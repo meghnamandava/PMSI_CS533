@@ -1542,23 +1542,23 @@ machine(L1Cache, "MSI Snooping L1 Cache CMP")
 
 	// Transition from IS_AD to IS_D
 	transition(IS_AD, {OWN_GETS, OWN_GETI}, IS_D) {
-		setFirstScheduledTime;
-		//l_popRequestQueue;
+		//setFirstScheduledTime;
+		l_popRequestQueue;
 	}
 
 	// Transition from IM_AD to IM_D
 	transition(IM_AD, OWN_GETM, IM_D) {
-		setFirstScheduledTime;
-		//l_popRequestQueue;
+		//setFirstScheduledTime;
+		l_popRequestQueue;
 	}
 
 	// Transition from IS_D to S
 	transition(IS_D, Data, S) {
 		u_writeDataToL1Cache;
 		r_load_hit;
-		calcLatencyProfile;
+		//calcLatencyProfile;
 		s_deallocateTBE;
-		//o_popIncomingResponseQueue;
+		o_popIncomingResponseQueue;
 		kd_wakeUpDependents;
 		ka_wakeUpAllDependents;
 	}
@@ -1571,9 +1571,9 @@ machine(L1Cache, "MSI Snooping L1 Cache CMP")
 	transition(IM_D, Data, M) {
 		u_writeDataToL1Cache;
 		s_store_hit;
-		calcLatencyProfile;
+		//calcLatencyProfile;
 		s_deallocateTBE;
-		//o_popIncomingResponseQueue;
+		o_popIncomingResponseQueue;
 		kd_wakeUpDependents;
 		ka_wakeUpAllDependents;
 	}
@@ -1594,9 +1594,9 @@ machine(L1Cache, "MSI Snooping L1 Cache CMP")
 	transition(IS_DI, Data, I) {
 		u_writeDataToL1Cache;
 		r_load_hit;
-		calcLatencyProfile;
+		//calcLatencyProfile;
 		s_deallocateTBE;
-		//o_popIncomingResponseQueue;
+		o_popIncomingResponseQueue;
     ff_deallocateL1CacheBlock;
 		kd_wakeUpDependents;
 		ka_wakeUpAllDependents;
@@ -1640,12 +1640,12 @@ machine(L1Cache, "MSI Snooping L1 Cache CMP")
 	// Transition from IM_DS to S
 	transition(IM_DS, Data, MS_A) {
 		u_writeDataToL1Cache;
-		calcLatencyProfile;
+		//calcLatencyProfile;
 		s_deallocateTBE;
 		s_store_hit;		
 		bpm_issuePUTMD;
 		//cc_sendDataCacheToCache;
-		//o_popIncomingResponseQueue;		
+		o_popIncomingResponseQueue;		
 	}
 
 	// Transition from IM_D to IM_DI
@@ -1662,12 +1662,12 @@ machine(L1Cache, "MSI Snooping L1 Cache CMP")
 	// Transition from IM_DI to I
 	transition(IM_DI, Data, MI_A) {
 		u_writeDataToL1Cache;
-		calcLatencyProfile;
+		//calcLatencyProfile;
 		s_deallocateTBE;
 		s_store_hit;
 		bpm_issuePUTMD;
 		//cc_sendDataCacheToCache;   
-		//o_popIncomingResponseQueue;		
+		o_popIncomingResponseQueue;		
 	}
 
 
@@ -1685,13 +1685,13 @@ machine(L1Cache, "MSI Snooping L1 Cache CMP")
 	// Transition from IM_DSI to I
 	transition(IM_DSI, Data, I) {
 		u_writeDataToL1Cache;
-		calcLatencyProfile;
+		//calcLatencyProfile;
 		s_deallocateTBE;
 		s_store_hit;
 		cc_sendDataCacheToDir;
 		//cc_sendDataCacheToCache;
 		ff_deallocateL1CacheBlock;
-		//o_popIncomingResponseQueue;
+		o_popIncomingResponseQueue;
 		kd_wakeUpDependents;
 		ka_wakeUpAllDependents;
 	}
@@ -1712,8 +1712,8 @@ machine(L1Cache, "MSI Snooping L1 Cache CMP")
 
 	transition(SM_W, OWN_UPG, M) {
 		sx_store_hit;	
-		setFirstScheduledTimeCE;
-		//l_popRequestQueue;
+		//setFirstScheduledTimeCE;
+		l_popRequestQueue;
 		kd_wakeUpDependents;
 		ka_wakeUpAllDependents;
 	}
@@ -1738,8 +1738,8 @@ machine(L1Cache, "MSI Snooping L1 Cache CMP")
 		bm_issueGETMR;
 		i_allocateTBE;
 		copyStartTimeCETBE;
-		setFirstScheduledTime;
-		//l_popRequestQueue;
+		//setFirstScheduledTime;
+		l_popRequestQueue;
 	}
 
 	transition(S, Other_UPG, I) {

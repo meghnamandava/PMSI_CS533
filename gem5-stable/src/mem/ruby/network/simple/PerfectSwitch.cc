@@ -298,7 +298,7 @@ PerfectSwitch::operateVnet(int vnet)
 										// The value in the comparison should reflect the number of cores + memory
 										// 6 means, 4 cores with 1 shared L2 and memory
 										//
-if (m_switch_id < 8) {
+if (m_switch_id < 5) {
 											if (incoming != outgoing) {
                     		DPRINTF(RubyNetwork, "Enqueuing net msg from "
                     		        "inport[%d][%d] to outport [%d][%d].\n",
