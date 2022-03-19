@@ -30,6 +30,7 @@
 #define __MEM_RUBY_SLICC_INTERFACE_RUBY_REQUEST_HH__
 
 #include <ostream>
+#include <cmath>
 
 #include "mem/protocol/Message.hh"
 #include "mem/protocol/PrefetchBit.hh"
