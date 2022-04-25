@@ -1,0 +1,2 @@
+./build/X86_MSI_Snooping_One_Level_RT/gem5.opt ./configs/example/ruby_random_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=1194304kB --wakeup_freq=1 --maxloads=1000000
+./build/X86_MSI_Snooping_One_Level_RT/gem5.opt ./configs/example/ruby_direct_test.py --ruby-clock=2GHz --ruby --cpu-clock=2GHz --topology=Crossbar --mem-type=SimpleMemory -n 4 --mem-size=4194304kB --wakeup_freq=1
