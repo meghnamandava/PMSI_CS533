@@ -1,0 +1,463 @@
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX box.H > box.h
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX box.C > box.c
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX defs.H > defs.h
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX particle.H > particle.h
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX memory.H > memory.h
+gcc -c -O3 -static -I/data/gem5-approx-hpca/gem5-stable/util/m5 /data/gem5-approx-hpca/gem5-stable/util/m5/m5op_x86.S /home/anirudh/Simulators/gem5/m5threads/libpthread.a -D_POSIX_C_SOURCE=200112 -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels box.c
+In file included from memory.H:22:0,
+                 from box.C:20:
+box.H:76:13: warning: padding struct to align ‘particles’ [-Wpadded]
+   particle *particles[MAX_PARTICLES_PER_BOX + 1];
+             ^
+gcc: warning: /home/anirudh/Simulators/gem5/m5threads/libpthread.a: linker input file unused because linking not done
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX construct_grid.H > construct_grid.h
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX construct_grid.C > construct_grid.c
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX partition_grid.H > partition_grid.h
+gcc -c -O3 -static -I/data/gem5-approx-hpca/gem5-stable/util/m5 /data/gem5-approx-hpca/gem5-stable/util/m5/m5op_x86.S /home/anirudh/Simulators/gem5/m5threads/libpthread.a -D_POSIX_C_SOURCE=200112 -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels construct_grid.c
+In file included from memory.H:22:0,
+                 from construct_grid.C:20:
+box.H:76:13: warning: padding struct to align ‘particles’ [-Wpadded]
+   particle *particles[MAX_PARTICLES_PER_BOX + 1];
+             ^
+construct_grid.C: In function ‘ConstructGrid’:
+construct_grid.C:81:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+construct_grid.C:81:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from construct_grid.C:20:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+construct_grid.C:81:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from construct_grid.C:20:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+construct_grid.C: In function ‘ConstructLists’:
+construct_grid.C:101:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+construct_grid.C:101:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from construct_grid.C:20:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+construct_grid.C:101:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from construct_grid.C:20:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+construct_grid.C: In function ‘PrintGrid’:
+construct_grid.C:167:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+construct_grid.C:167:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+       BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from construct_grid.C:20:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+construct_grid.C:167:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+       BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from construct_grid.C:20:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+construct_grid.C:168:31: warning: passing argument 2 of ‘PartitionIterate’ from incompatible pointer type
+       PartitionIterate(my_id, PrintBox, TOP);
+                               ^
+In file included from construct_grid.C:23:0:
+partition_grid.H:30:13: note: expected ‘partition_function’ but argument is of type ‘void (*)(struct box *)’
+ extern void PartitionIterate(long my_id, partition_function function,
+             ^
+construct_grid.C:169:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+construct_grid.C:169:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+       BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from construct_grid.C:20:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+construct_grid.C:169:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+       BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from construct_grid.C:20:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+construct_grid.C:174:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+construct_grid.C:174:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+       BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from construct_grid.C:20:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+construct_grid.C:174:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+       BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from construct_grid.C:20:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+construct_grid.C: In function ‘MergeLocalGridSize’:
+construct_grid.C:268:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+construct_grid.C:268:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from construct_grid.C:20:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+construct_grid.C:268:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from construct_grid.C:20:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+construct_grid.C: In function ‘InitGrid’:
+construct_grid.C:306:36: warning: passing argument 2 of ‘frexp’ from incompatible pointer type
+    frexp(Local[my_id].Local_X_Max, &exp);
+                                    ^
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/stdio.h:27,
+                 from construct_grid.C:17:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:103:1: note: expected ‘int *’ but argument is of type ‘long int *’
+ __MATHCALL (frexp,, (_Mdouble_ __x, int *__exponent));
+ ^
+construct_grid.C:313:36: warning: passing argument 2 of ‘frexp’ from incompatible pointer type
+    frexp(Local[my_id].Local_X_Min, &exp);
+                                    ^
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/stdio.h:27,
+                 from construct_grid.C:17:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:103:1: note: expected ‘int *’ but argument is of type ‘long int *’
+ __MATHCALL (frexp,, (_Mdouble_ __x, int *__exponent));
+ ^
+construct_grid.C:320:36: warning: passing argument 2 of ‘frexp’ from incompatible pointer type
+    frexp(Local[my_id].Local_Y_Max, &exp);
+                                    ^
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/stdio.h:27,
+                 from construct_grid.C:17:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:103:1: note: expected ‘int *’ but argument is of type ‘long int *’
+ __MATHCALL (frexp,, (_Mdouble_ __x, int *__exponent));
+ ^
+construct_grid.C:327:36: warning: passing argument 2 of ‘frexp’ from incompatible pointer type
+    frexp(Local[my_id].Local_Y_Min, &exp);
+                                    ^
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/stdio.h:27,
+                 from construct_grid.C:17:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:103:1: note: expected ‘int *’ but argument is of type ‘long int *’
+ __MATHCALL (frexp,, (_Mdouble_ __x, int *__exponent));
+ ^
+construct_grid.C: In function ‘SetColleagues’:
+construct_grid.C:877:21: warning: unused parameter ‘my_id’ [-Wunused-parameter]
+ SetColleagues (long my_id, box *b)
+                     ^
+construct_grid.C: In function ‘SetVList’:
+construct_grid.C:937:16: warning: unused parameter ‘my_id’ [-Wunused-parameter]
+ SetVList (long my_id, box *b)
+                ^
+gcc: warning: /home/anirudh/Simulators/gem5/m5threads/libpthread.a: linker input file unused because linking not done
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX cost_zones.H > cost_zones.h
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX cost_zones.C > cost_zones.c
+gcc -c -O3 -static -I/data/gem5-approx-hpca/gem5-stable/util/m5 /data/gem5-approx-hpca/gem5-stable/util/m5/m5op_x86.S /home/anirudh/Simulators/gem5/m5threads/libpthread.a -D_POSIX_C_SOURCE=200112 -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels cost_zones.c
+In file included from memory.H:22:0,
+                 from cost_zones.C:18:
+box.H:76:13: warning: padding struct to align ‘particles’ [-Wpadded]
+   particle *particles[MAX_PARTICLES_PER_BOX + 1];
+             ^
+cost_zones.C: In function ‘CostZones’:
+cost_zones.C:50:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+cost_zones.C:50:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from cost_zones.C:18:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+cost_zones.C:50:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from cost_zones.C:18:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+cost_zones.C:62:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+cost_zones.C:62:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from cost_zones.C:18:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+cost_zones.C:62:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from cost_zones.C:18:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+cost_zones.C: In function ‘ComputeSubTreeCosts’:
+cost_zones.C:67:27: warning: unused parameter ‘my_id’ [-Wunused-parameter]
+ ComputeSubTreeCosts (long my_id, box *b)
+                           ^
+gcc: warning: /home/anirudh/Simulators/gem5/m5threads/libpthread.a: linker input file unused because linking not done
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX defs.C > defs.c
+gcc -c -O3 -static -I/data/gem5-approx-hpca/gem5-stable/util/m5 /data/gem5-approx-hpca/gem5-stable/util/m5/m5op_x86.S /home/anirudh/Simulators/gem5/m5threads/libpthread.a -D_POSIX_C_SOURCE=200112 -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels defs.c
+In file included from memory.H:22:0,
+                 from defs.C:21:
+box.H:76:13: warning: padding struct to align ‘particles’ [-Wpadded]
+   particle *particles[MAX_PARTICLES_PER_BOX + 1];
+             ^
+defs.C: In function ‘RoundReal’:
+defs.C:41:31: warning: passing argument 2 of ‘frexp’ from incompatible pointer type
+    frac = frexp((double) val, &exp);
+                               ^
+In file included from /usr/include/features.h:374:0,
+                 from /usr/include/stdio.h:27,
+                 from defs.C:17:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:103:1: note: expected ‘int *’ but argument is of type ‘long int *’
+ __MATHCALL (frexp,, (_Mdouble_ __x, int *__exponent));
+ ^
+defs.C:37:11: warning: variable ‘temp’ set but not used [-Wunused-but-set-variable]
+    double temp;
+           ^
+gcc: warning: /home/anirudh/Simulators/gem5/m5threads/libpthread.a: linker input file unused because linking not done
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX interactions.H > interactions.h
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX fmm.C > fmm.c
+gcc -c -O3 -static -I/data/gem5-approx-hpca/gem5-stable/util/m5 /data/gem5-approx-hpca/gem5-stable/util/m5/m5op_x86.S /home/anirudh/Simulators/gem5/m5threads/libpthread.a -D_POSIX_C_SOURCE=200112 -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels fmm.c
+In file included from memory.H:22:0,
+                 from fmm.C:75:
+box.H:76:13: warning: padding struct to align ‘particles’ [-Wpadded]
+   particle *particles[MAX_PARTICLES_PER_BOX + 1];
+             ^
+fmm.C: In function ‘main’:
+fmm.C:120:17: warning: redundant redeclaration of ‘optarg’ [-Wredundant-decls]
+    extern char *optarg;
+                 ^
+In file included from /usr/include/unistd.h:871:0,
+                 from memory.H:26,
+                 from fmm.C:75:
+/usr/include/getopt.h:57:14: note: previous declaration of ‘optarg’ was here
+ extern char *optarg;
+              ^
+fmm.C:145:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    WAIT_FOR_END(Number_Of_Processors);
+                ^
+fmm.C: In function ‘ParallelExecute’:
+fmm.C:169:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+fmm.C:169:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from fmm.C:75:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+fmm.C:169:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from fmm.C:75:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+fmm.C:205:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+fmm.C:205:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from fmm.C:75:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+fmm.C:205:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from fmm.C:75:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+fmm.C:241:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+fmm.C:241:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from fmm.C:75:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+fmm.C:241:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from fmm.C:75:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+fmm.C:254:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+fmm.C:254:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from fmm.C:75:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+fmm.C:254:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from fmm.C:75:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+fmm.C: In function ‘StepSimulation’:
+fmm.C:288:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+fmm.C:288:50: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                                  ^
+In file included from memory.H:26:0,
+                 from fmm.C:75:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+fmm.C:288:34: warning: passing argument 2 of ‘pthread_setcancelstate’ from incompatible pointer type
+    BARRIER(G_Memory->synch, Number_Of_Processors);
+                                  ^
+In file included from memory.H:26:0,
+                 from fmm.C:75:
+/usr/include/pthread.h:517:12: note: expected ‘int *’ but argument is of type ‘long int *’
+ extern int pthread_setcancelstate (int __state, int *__oldstate);
+            ^
+fmm.C: In function ‘PrintTimes’:
+fmm.C:586:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+          if (Local[j].init_done_times > init_done) {
+                                       ^
+gcc: warning: /home/anirudh/Simulators/gem5/m5threads/libpthread.a: linker input file unused because linking not done
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX interactions.C > interactions.c
+gcc -c -O3 -static -I/data/gem5-approx-hpca/gem5-stable/util/m5 /data/gem5-approx-hpca/gem5-stable/util/m5/m5op_x86.S /home/anirudh/Simulators/gem5/m5threads/libpthread.a -D_POSIX_C_SOURCE=200112 -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels interactions.c
+In file included from memory.H:22:0,
+                 from interactions.C:20:
+box.H:76:13: warning: padding struct to align ‘particles’ [-Wpadded]
+   particle *particles[MAX_PARTICLES_PER_BOX + 1];
+             ^
+interactions.C: In function ‘UpwardPass’:
+interactions.C:92:18: warning: unused parameter ‘my_id’ [-Wunused-parameter]
+ UpwardPass (long my_id, box *b)
+                  ^
+interactions.C: In function ‘DownwardPass’:
+interactions.C:129:20: warning: unused parameter ‘my_id’ [-Wunused-parameter]
+ DownwardPass (long my_id, box *b)
+                    ^
+interactions.C: In function ‘UListInteraction’:
+interactions.C:312:24: warning: unused parameter ‘my_id’ [-Wunused-parameter]
+ UListInteraction (long my_id, box *source_box, box *dest_box)
+                        ^
+interactions.C: In function ‘VListInteraction’:
+interactions.C:353:24: warning: unused parameter ‘my_id’ [-Wunused-parameter]
+ VListInteraction (long my_id, box *source_box, box *dest_box)
+                        ^
+interactions.C: In function ‘WAndXListInteractions’:
+interactions.C:427:29: warning: unused parameter ‘my_id’ [-Wunused-parameter]
+ WAndXListInteractions (long my_id, box *b1, box *b2)
+                             ^
+In file included from interactions.C:19:0:
+interactions.C: In function ‘ShiftLocalExp’:
+defs.H:70:20: warning: ‘temp.r’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   _c_temp.i = (b.r * c.i) + (b.i * c.r); \
+                    ^
+interactions.C:590:12: note: ‘temp.r’ was declared here
+    complex temp;
+            ^
+In file included from interactions.C:19:0:
+defs.H:70:34: warning: ‘temp.i’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   _c_temp.i = (b.r * c.i) + (b.i * c.r); \
+                                  ^
+interactions.C:590:12: note: ‘temp.i’ was declared here
+    complex temp;
+            ^
+gcc: warning: /home/anirudh/Simulators/gem5/m5threads/libpthread.a: linker input file unused because linking not done
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX memory.C > memory.c
+gcc -c -O3 -static -I/data/gem5-approx-hpca/gem5-stable/util/m5 /data/gem5-approx-hpca/gem5-stable/util/m5/m5op_x86.S /home/anirudh/Simulators/gem5/m5threads/libpthread.a -D_POSIX_C_SOURCE=200112 -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels memory.c
+In file included from memory.H:22:0,
+                 from memory.C:19:
+box.H:76:13: warning: padding struct to align ‘particles’ [-Wpadded]
+   particle *particles[MAX_PARTICLES_PER_BOX + 1];
+             ^
+gcc: warning: /home/anirudh/Simulators/gem5/m5threads/libpthread.a: linker input file unused because linking not done
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX particle.C > particle.c
+gcc -c -O3 -static -I/data/gem5-approx-hpca/gem5-stable/util/m5 /data/gem5-approx-hpca/gem5-stable/util/m5/m5op_x86.S /home/anirudh/Simulators/gem5/m5threads/libpthread.a -D_POSIX_C_SOURCE=200112 -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels particle.c
+In file included from memory.H:22:0,
+                 from particle.C:21:
+box.H:76:13: warning: padding struct to align ‘particles’ [-Wpadded]
+   particle *particles[MAX_PARTICLES_PER_BOX + 1];
+             ^
+particle.C: In function ‘CreateDistribution’:
+particle.C:77:3: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 2 has type ‘long long unsigned int’ [-Wformat=]
+   printf("\n S and E: %lx %lx", startAddr, endAddr);
+   ^
+particle.C:77:3: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘long long unsigned int’ [-Wformat=]
+particle.C:80:35: error: ‘ParticleList’ undeclared (first use in this function)
+   startAddr = (unsigned long long)ParticleList[0];
+                                   ^
+particle.C:80:35: note: each undeclared identifier is reported only once for each function it appears in
+particle.C:83:3: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 2 has type ‘long long unsigned int’ [-Wformat=]
+   printf("\n S and E: %lx %lx", startAddr, endAddr);
+   ^
+particle.C:83:3: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘long long unsigned int’ [-Wformat=]
+particle.C:49:9: warning: variable ‘global_num_particles’ set but not used [-Wunused-but-set-variable]
+    long global_num_particles;
+         ^
+make: *** [particle.o] Error 1

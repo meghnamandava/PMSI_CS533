@@ -1,0 +1,15 @@
+m4 -s -Ulen -Uindex /data/gem5-approx-hpca/Benchmarks/splash2/codes/null_macros/c.m4.null.POSIX water.C > water.c
+gcc -c -O3 -static -I/data/gem5-approx-hpca/gem5-stable/util/m5 /data/gem5-approx-hpca/gem5-stable/util/m5/m5op_x86.S /home/anirudh/Simulators/gem5/m5threads/libpthread.a -D_POSIX_C_SOURCE=200112 -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels water.c
+water.C: In function ‘main’:
+water.C:347:6: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 2 has type ‘long long unsigned int’ [-Wformat=]
+      printf("\n S and E: %lx %lx", startAddr, endAddr);
+      ^
+water.C:347:6: warning: format ‘%lx’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘long long unsigned int’ [-Wformat=]
+water.C:358:16: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     WAIT_FOR_END(NumProcs);
+                ^
+water.C:168:30: warning: ‘zprocs’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+         long xprocs, yprocs, zprocs;
+                              ^
+gcc: warning: /home/anirudh/Simulators/gem5/m5threads/libpthread.a: linker input file unused because linking not done
+gcc bndry.o cnstnt.o cshift.o initia.o interf.o intraf.o kineti.o mdmain.o poteng.o predcor.o syscons.o water.o -O3 -static -I/data/gem5-approx-hpca/gem5-stable/util/m5 /data/gem5-approx-hpca/gem5-stable/util/m5/m5op_x86.S /home/anirudh/Simulators/gem5/m5threads/libpthread.a -D_POSIX_C_SOURCE=200112 -Wall -W -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wdisabled-optimization -Wpadded -Winline -Wpointer-arith -Wsign-compare -Wendif-labels -o WATER-SPATIAL -lm
